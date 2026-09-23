@@ -1,0 +1,17 @@
+{
+  "name": "http-accept-language-parse",
+  "version": "0.1.0",
+  "description": "Parses Accept-Language headers into a sorted, weight-normalized list of locale tags.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
