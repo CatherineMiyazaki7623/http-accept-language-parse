@@ -32,3 +32,10 @@ are dropped.
 Entries with `q=0` are removed entirely, because they explicitly indicate that
 a language is not acceptable. The remaining weights are then normalized so the
 highest becomes 1.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
